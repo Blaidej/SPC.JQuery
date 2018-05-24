@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Jquery Example 2</title>
+<style type="text/css">
+	h1 {		color: 				red; }
+	p {			color: 				blue; }
+	body {		background-color: 	lightgreen; }
+	#menuHeader {	position:		absolute;
+					top:			100px;
+					left:			50px;
+					width:			600px;
+					height:			50px;
+					background-color: yellow;
+					border:			5px black solid; }
+	#menuContent { 	position:		absolute;
+					top:			150px;
+					left:			50px;
+					width:			600px;
+					height:			200px;
+					background-color: yellow;
+					border:			5px black solid;
+					display:		none;}
+</style>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		
+		$("#menuHeader").click(function() {
+			$("#menuContent").slideToggle(50);
+		});
+		
+	
+	});
+</script>
+</head>
+
+<body>
+<h1>Jquery Example 7</h1>
+<div id="menuHeader">
+	<p>Click inside the Menu Header to show and hide Menu Contents</p>
+</div>
+<div id="menuContent">
+	<p>Todays Specials</p>
+	<ul>
+		<li>Pizza</li>
+		<li>Hamburgers</li>
+		<li>Buffalo Wings</li>
+		<li>Nachos</li>
+		<li>Tacos</li>
+		<li>Burritos</li>
+	</ul>
+</div>
+</body>
+</html>

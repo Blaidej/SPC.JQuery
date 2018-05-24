@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Jquery Example 2</title>
+<style type="text/css">
+	h1 {		color: 				red; }
+	p {			color: 				blue; }
+	body {		background-color: 	lightgreen; }
+	#button1 {	position:			absolute; top: 				250px;left: 				20px; }
+	#image1 {	position:			absolute;
+				top: 				50px;
+				left:				400px; }
+	#button1 {	position: absolute; top: 200px; left: 20px; }
+	#button2 {	position: absolute; top: 220px; left: 20px; }
+	#button3 {	position: absolute; top: 240px; left: 20px; }
+	#button4 {	position: absolute; top: 260px; left: 20px; }
+	#button5 {	position: absolute; top: 280px; left: 20px; }
+	#button6 {	position: absolute; top: 300px; left: 20px; }
+	#button7 {	position: absolute; top: 320px; left: 20px; }
+	#button8 {	position: absolute; top: 340px; left: 20px; }
+	#button9 {	position: absolute; top: 360px; left: 20px; }
+				
+</style>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function() {
+
+		$("#button1").click(function(){
+			$("#p1").fadeIn();
+		});
+		
+		$("#button2").mouseover(function(){
+			$("#p1").fadeOut();
+		});
+		
+		$("#button3").click(function(){
+			$("p").fadeIn();
+		});
+		
+		$("#button4").click(function(){
+			$("p").fadeToggle(2000);
+		});
+		
+		$("#button5").click(function(){
+			$("p").fadeIn(2000);
+		});
+		
+		$("#button6").click(function(){
+			$("p").fadeToggle(2000);
+		});
+		
+		$("#button7").click(function(){
+			$("#image1").fadeTo(1000, 0.75);
+		});
+		
+		$("#button8").click(function(){
+			$("#image1").fadeTo(1000, 0.25);
+			
+		});
+		
+		$("#button9").click(function(){
+			$("#image1").fadeTo(1000, 1.0);
+		});
+		
+		
+		
+		
+	});
+
+
+</script>
+</head>
+
+<body>
+<h1>Jquery Example 2</h1>
+<p id="p1">The quick brown fox jumps over the lazy dog.</p>
+<p id="p2">Peter Pipper picked a peck of pickled peppers.</p>
+<p id="p3">Sally sells sea shells by the sea shore</p>
+<img id="image1" src="dogpoker.jpg" />
+<input type="button" id="button1" value="Fade In Paragraph1" />
+<input type="button" id="button2" value="Fade Out Paragraph1" />
+<input type="button" id="button3" value="Fade Toggle P1" />
+<input type="button" id="button4" value="Fade In All Paragraphs" />
+<input type="button" id="button5" value="Fade Out All Paragraphs" />
+<input type="button" id="button6" value="Fade Toggle All Paragraphs" />
+<input type="button" id="button7" value="Fade Image1 to 75" />
+<input type="button" id="button8" value="Fade Image1 to 25" />
+<input type="button" id="button9" value="Fade Image1 to 100" />
+
+</body>
+</html>

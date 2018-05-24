@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Jquery Example 11</title>
+<style type="text/css">
+	h1 {		color: 				red; }
+	p {			color: 				blue; }
+	body {		background-color: 	lightgreen; }
+	#button1 {	position: absolute; top: 300px; left: 20px; }
+	#button2 {	position: absolute; top: 320px; left: 20px; }
+	#button3 {	position: absolute; top: 340px; left: 20px; }
+	#button4 {	position: absolute; top: 360px; left: 20px; }
+	#button5 {	position: absolute; top: 380px; left: 20px; }
+	#button6 {	position: absolute; top: 400px; left: 20px; }
+	#button7 {	position: absolute; top: 420px; left: 20px; }
+	#button8 {	position: absolute; top: 440px; left: 20px; }
+	#button9 {	position: absolute; top: 460px; left: 20px; }
+	#text1 {	position: absolute; left:	100px; }
+	#text2 {	position: absolute; left:	100px; }
+	#text3 {	position: absolute; left:	100px; }
+	#text4 {	position: absolute; left:	100px; }
+	
+				
+</style>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+	
+		$("#button1").click(function(){
+			var x = $("#p1").text();
+			alert("The text value of p1 is " + x);
+		});
+		
+		$("#button2").click(function(){
+			var x = $("#p1").html();
+			alert("The html value of p1 is " + x);
+		});
+		
+		$("#button3").click(function(){
+			var x = $("#p2").text();
+			alert("The text value of p2 is " + x);
+		});
+		
+		$("#button4").click(function(){
+			var x = $("#p2").html();
+			alert("The hmtl value of p2 is " + x);
+		});
+		
+		//
+		$("#button5").click(function(){
+			var x = $("#text1").text();
+			alert("The text value of text1 is " + x);
+		});
+		
+		$("#button6").click(function(){
+			var x = $("#text1").html();
+			alert("The html value of text1 is " + x);
+		});
+		
+		$("#button7").click(function(){
+			var x = $("#text1").val();
+			alert("The val value of text1 is " + x);
+		});
+		
+	});
+
+
+
+
+</script>
+</head>
+
+<body>
+<h1>Jquery Example 11</h1>
+
+<p id="p1">The quick brown fox <b>jumps</b> over the lazy dog.</p>
+<p id="p2">Peter Pipper picked a <span style="color: red">peck</span> of pickled peppers.</p>
+<p id="p3">Sally sells sea shells by the sea shore</p>
+
+<form id="form1">
+	<p>First Name:	<input type="text" id="text1"></p>
+	<p>Last Name:	<input type="text" id="text2"></p>
+	<p>City:		<input type="text" id="text3"></p>
+	<p>State:		<input type="text" id="text4"></p>
+</form>
+
+<input type="button" id="button1" value="Get Text p1" />
+<input type="button" id="button2" value="Get HTML from p1" />
+<input type="button" id="button3" value="Get Text from p2" />
+<input type="button" id="button4" value="Get HTML from p2" />
+<input type="button" id="button5" value="Get First Name - with text" />
+<input type="button" id="button6" value="Get First Name - with HTML" />
+<input type="button" id="button7" value="Get First Name - with val" />
+<input type="button" id="button8" value="x" />
+<input type="button" id="button9" value="x" />
+
+</body>
+</html>
